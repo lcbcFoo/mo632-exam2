@@ -1,0 +1,43 @@
+fact = 1.60E+01 # [MHz] - Processor Frequency when active
+fsleep = 8.00E+00 # [MHz] - Processor Frequency when asleep
+T = 2.73E+02 # [K] - Temperature in Kelvin
+sleep_strategy = clock # [string] - "Low power mode strategy clock power"
+# Formulas
+Etotal = #N/A # [J] - Total energy consumed during 1 period
+Etransition = #N/A # [J] - "Total energy consumed during transition from active to sleep + sleep to active"
+Eactive = #N/A # [J] - Total energy consumed while active
+Esleep = #N/A # [J] - Total energy consumed while asleep
+Tactive = #N/A # [s] - Time processor is active = 1 / (f / fmin)
+Tto_active = 1.00E-06 # [s] - "Delay till the processor is active. Selected between: Tclock_act, Tpower_act"
+Tto_sleep = 1.00E-06 # [s] - "Delay till the processor is asleep. Selected between: Tact_clock Tact_power"
+Tsleep = #N/A # [s] - "Time processor is in sleep mode. Tsleep = p - (Tactive + Tto_active + Tto_sleep)"
+Vdd_act = 1.00E+00 # [V]
+Vdd_sleep = 1.00E+00 # [V]
+Ps = #N/A # [W]
+Pa = #N/A # [W]
+Poff = #N/A # [W]
+Constants =  #
+Vthn = 2.00E-01 # [V]
+Vthp = 2.32E-01 # [V]
+a = 2.02E-07 # [A/K^2]
+b = 9.21E+03 # [K/V]
+c = 8.90E+02 # [K/V]
+g = 2.00E-01 #
+C = 2.50E-01 # [W/V^2]
+s = 5.00E-04 #
+Omega = 5.00E-01 #
+Vmin = 1.00E+00 # [V]
+fmin = 8.00E+00 # [MHz]
+fmax = 2.00E+02 # [MHz]
+gamma = 2.00E+03 # [MHz/V]
+p = 1.00E+00 # [s] - Actuation Period
+Tfreq = 1.00E-06 # [s] - Time to switch frequency
+Tact_clock = 1.00E-06 # [s] - Time from active to clock gate
+Tclock_act = 1.00E-06 # [s] - Time from clock gate to active
+Tact_power = 1.00E-05 # [s] - Time from active to power gate
+Tpower_act = 1.00E-03 # [s] - Time from active to power gate
+Bat = 5.40E+00 # [Ah] - Battery
+Auxiliary calculations =  #
+Exp1 = 3.99E-04 # - First exponential of Ps formula
+Exp2 = 1.17E-03 # - Second exponential of Ps formula
+Exp3 = #N/A # - Third exponential of Ps formula
